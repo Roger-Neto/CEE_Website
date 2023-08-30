@@ -20,11 +20,58 @@ header{
     background-color:red;
 }
 
-.nav_bar{
+.nav_bar {
     width: 100%;
-    height: 30px;
+    height: 40px; /* Aumentei a altura para acomodar ícones maiores e texto */
     background-color: whitesmoke;
-}
+  }
+
+  .nav_bar ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centralizei os itens */
+  }
+
+  .nav_bar li {
+    display: inline-block;
+    margin: 0 20px; /* Aumentei a margem para maior espaçamento */
+  }
+
+  .nav_bar li a {
+    display: block;
+    color: black; /* Mudei para preto para maior contraste com o fundo branco */
+    text-align: center;
+    padding: 10px 20px; /* Reduzi o padding para melhor ajuste */
+    text-decoration: none;
+    font-size: 16px; /* Aumentei o tamanho da fonte */
+    border-radius: 20px; /* Adicione bordas arredondadas */
+  }
+
+  .nav_bar li i {
+    font-size: 24px; /* Aumentei o tamanho dos ícones */
+    margin-right: 5px; /* Adicionei margem à direita dos ícones */
+  }
+
+  .nav_bar li a:hover {
+    background-color: #ddd; /* Mudei a cor de fundo para um cinza mais claro */
+  }
+
+   /* Estilo para o menu suspenso */
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .nav_bar li:hover .dropdown-content {
+    display: block;
+  }
 
 /** Bloco*/
 
